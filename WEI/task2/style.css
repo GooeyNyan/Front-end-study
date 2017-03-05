@@ -1,0 +1,190 @@
+body {
+    background-color: #DEDEDE;
+}
+
+header {
+    background-color: #333333;
+}
+
+header img {
+    width: 18%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 90px;
+}
+
+footer>p {
+    padding-top: 2em;
+}
+
+h3,
+h3+h5 {
+    color: grey;
+}
+
+p {
+    text-indent: 2em;
+    line-height: 200%;
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+    box-shadow: 5px 5px 5px #888888;
+    background-color: white;
+}
+
+.col {
+    margin-top: 40px;
+    padding: 25px 30px;
+}
+
+.nav {
+    position: absolute;
+    margin-top: -61px;
+    margin-left: 1370px;
+}
+
+.nav li {
+    margin-left: 30px;
+    float: left;
+}
+
+.nav a:link,
+.nav a:hover,
+.nav a:visited,
+.nav a:active {
+    color: white;
+    text-decoration: none;
+}
+
+.article-image {
+    width: 30%;
+}
+
+.gallery {
+    margin: 2% 3%;
+    width: 20%;
+    box-shadow: 2px 2px 5px #888888;
+    text-align: center;
+}
+
+.gallery-image {
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.nodisc {
+    list-style: none;
+}
+
+.high-li {
+    line-height: 200%;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.col-11 {
+    width: 98%;
+    margin: auto;
+}
+
+.table {
+    display: table;
+    width: 98%;
+    border-collapse: separate;
+    border: 1px solid black;
+}
+
+.table-row {
+    display: table-row;
+    height: 35px;
+}
+
+.table-header {
+    color: white;
+    background-color: #333333;
+    font-weight: bold;
+}
+
+.cell {
+    display: table-cell;
+    padding: 0.5%;
+    width: 40%;
+}
+
+.operation-cell {
+    display: table-cell;
+    padding: 0.5%;
+    width: 20%;
+}
+
+.table-border {
+    border: 2px solid darkgrey;
+}
+
+.sum {
+    background-color: rgba(204, 204, 204, 1);
+    font-weight: bold;
+}
+
+.table-row div {
+    border: solid rgba(204, 204, 204, 1);
+    border-width: 0 1px 1px 0;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+aside .flexbox {
+    margin-left: 20%;
+}
+
+.row {
+    width: 100%;
+}
+
+.col-left {
+    width: 15%;
+    text-align: right;
+}
+
+.col-right {
+    width: 84%;
+    margin-left: 1%;
+    text-align: left;
+}
+
+.col-right p{
+    margin: 0;
+    text-indent: 0;
+    color: grey;
+}
+
+.submit {
+    margin-top: 1%;
+    width: 100%;
+    height: 45px;
+    background-color: rgb(51, 58, 208);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    background: linear-gradient(top,  #70c9e3 0%,#39a0be 100%); /* W3C */
+}
+
+.submit:hover {
+    box-shadow: 1px 1px 1px rgba(0,0,0,.29), inset 0px 0px 2px rgba(0,0,0, .5);
+}
+
+.submit:active {
+    box-shadow: inset 0px 0px 3px rgba(0,0,0, .8);
+}
