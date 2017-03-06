@@ -1,0 +1,34 @@
+.rectangle {
+    width: 400px;
+    height: 200px;
+
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    background: #ccc;
+}
+
+.round-1 {
+    width: 50px;
+    height: 50px;
+    background-color: #fc0;
+    overflow: hidden;
+    border-bottom-right-radius: 100%;
+}
+
+.round-2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    right: 0;
+    background-color: #fc0;
+    overflow: hidden;
+    border-top-left-radius: 100%;
+}
+
+/*参考文章：http://blog.csdn.net/freshlover/article/details/11579669*/
