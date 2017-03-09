@@ -1,0 +1,264 @@
+
+/* 两栏布局参考：https://segmentfault.com/q/1010000002709361?_ea=600759 */
+
+
+/* 解决float后 footer 高度塌陷解决方案参考 : http://www.jianshu.com/p/f09f40591d97 */
+
+
+/* ① BFC方案， 开启BFC方法之一：两浮动元素于同一父级div中，div {overflow: hidden;} （据说BFC有副作用*/
+
+
+/* ② 同级div {clear: ...} , 用空白撑开父元素 */
+
+
+/* ③ 通过after伪类，和添加div效果一样，而且不会再页面中添加div，最推荐的方法 */
+
+body {
+    background-color: #DEDEDE;
+}
+
+body>div {
+    /*overflow: hidden;*/
+    clear: left;
+    /* 兼容IE6 */
+    zoom: 1;
+}
+
+body>div:after {
+    /* 必须设置一个空的content,否则不起作用  */
+    content: "";
+    /* 转换成块元素  */
+    display: block;
+    clear: both;
+}
+
+header {
+    background-color: #333333;
+}
+
+header img {
+    width: 18%;
+    min-width: 250px;
+}
+
+main {
+    float: left;
+    width: 100%;
+}
+
+h3,
+h3+h5 {
+    color: grey;
+}
+
+p {
+    text-indent: 2em;
+    line-height: 200%;
+}
+
+article img {
+    width: 30%;
+    min-width: 350px;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+aside {
+    position: relative;
+    float: right;
+    height: 570px;
+    width: 300px;
+    margin: 20px 20px 0 -330px;
+    background: white;
+    box-shadow: 5px 5px 5px #888888;
+    font-size: 0.8em;
+}
+
+aside h2,
+aside h3 {
+    margin-left: 5%
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+footer>p {
+    padding-top: 1.5em;
+}
+
+/* 导航栏 */
+.nav {
+    position: absolute;
+    top: 1em;
+    right: 2em;
+}
+
+.nav li {
+    margin-left: 30px;
+    float: left;
+}
+
+.nav a:link,
+.nav a:hover,
+.nav a:visited,
+.nav a:active {
+    color: white;
+    text-decoration: none;
+}
+
+/* End of navbar */
+
+/* CSS of Card */
+.container {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 340px;
+    padding: 20px;
+    background: white;
+    box-shadow: 5px 5px 5px #888888;
+}
+
+.nodisc {
+    list-style: none;
+    line-height: 200%;
+}
+
+/* 图片库 */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo-frame {
+    margin: 2% 3%;
+    width: 200px;
+    box-shadow: 2px 2px 5px #888888;
+    text-align: center;
+}
+
+.photo-frame>p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.photo-frame img {
+    width: 90%;
+    margin-bottom: 10px;
+}
+/* End of gallery */
+
+#nav-3 li {
+    line-height: 200%;
+    font-weight: bold;
+}
+
+/* 表格 */
+.table {
+    display: table;
+    width: 98%;
+    border-collapse: separate;
+    border: 2px solid darkgrey;
+}
+
+.table-row {
+    display: table-row;
+    height: 35px;
+}
+
+.table-header {
+    color: white;
+    background-color: #333333;
+    font-weight: bold;
+}
+
+.cell {
+    display: table-cell;
+    padding: 0.5%;
+    width: 40%;
+}
+
+.operation-cell {
+    display: table-cell;
+    padding: 0.5%;
+    width: 20%;
+}
+
+.sum {
+    background-color: rgba(204, 204, 204, 1);
+    font-weight: bold;
+}
+
+.table-row div {
+    border: solid rgba(204, 204, 204, 1);
+    border-width: 0 1px 1px 0;
+}
+/* End of table*/
+
+/* 侧栏 */
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.row {
+    width: 100%;
+}
+
+.col-left {
+    width: 35%;
+    text-align: right;
+}
+
+.col-right {
+    width: 60%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.col-right p {
+    margin: 0;
+    text-indent: 0;
+    color: grey;
+}
+
+.submit {
+    margin: 4%;
+    width: 90%;
+    height: 45px;
+    background-color: rgb(51, 58, 208);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 1px 1px 1px rgba(255, 255, 255, .44);
+    background: linear-gradient(top, #70c9e3 0%, #39a0be 100%);
+}
+
+.submit:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .29), inset 0px 0px 2px rgba(0, 0, 0, .5);
+}
+
+.submit:active {
+    box-shadow: inset 0px 0px 3px rgba(0, 0, 0, .8);
+}
+/* End of aside */
+
+@media screen and (max-width: 1000px) {
+    .nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    aside {
+        float: none;
+        display: none;
+    }
+    .container {
+        margin-right: 20px;
+    }
+}
