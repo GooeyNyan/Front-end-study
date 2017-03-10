@@ -123,6 +123,7 @@
 }
 
 .number-700 {
+    margin-left: -15px;
     font-size: 116px;
     font-family: "Microsoft YaHei";
     font-style: italic;
