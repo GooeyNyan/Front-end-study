@@ -260,5 +260,6 @@ footer>p {
     }
     .container {
         margin-right: 20px;
+        margin-top: 0;
     }
 }
