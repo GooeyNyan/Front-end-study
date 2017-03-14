@@ -1,0 +1,813 @@
+body {
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    min-width: 1280px;
+    max-width: 1280px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 57px;
+}
+
+header>div:nth-child(1) {
+    align-items: center;
+    padding-top: 12px;
+    margin-left: 60px;
+}
+
+header .flex h2 {
+    margin: 0;
+    font-size: 21px;
+    font-family: "SimHei";
+    font-weight: 100;
+}
+
+header .flex img {
+    margin-right: 10px;
+}
+
+header>div:nth-child(2) {
+    margin-right: 47px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 545px;
+    height: 57px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: #8F9197;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header>div:nth-child(2)>div:nth-last-child(n + 1) {
+    height: 57px;
+    align-items: center;
+}
+
+header>div:nth-child(2)>div:nth-last-child(1) {
+    color: #E7504D;
+}
+
+.navbar {
+    width: calc(545px / 6);
+    justify-content: center;
+}
+
+.navbar:nth-child(1) {
+    width: calc(545px / 6 - 25px);
+}
+
+.navbar:hover,
+.navbar:focus {
+    padding-top: 3px;
+    color: #E7504D;
+    box-sizing: border-box;
+    border-bottom: 4px solid #E7504D;
+}
+
+#row-1 {
+    margin-top: -1px;
+    position: relative;
+    background: url("../images/1/1.png") no-repeat;
+    height: 691px;
+    width: 100%;
+    font-family: "Microsoft YaHei";
+    color: #fff;
+}
+
+.dark-mask {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+    height: 691px;
+    width: 100%;
+    z-index: 0;
+}
+
+.slogan {
+    position: absolute;
+    margin-top: 222px;
+    margin-left: 116px;
+    z-index: 1;
+}
+
+.slogan h2,
+.slogan p,
+.slogan div {
+    margin: 0
+}
+
+.slogan h2 {
+    margin-bottom: 14px;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.slogan p {
+    margin-bottom: 63px;
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: 100;
+}
+
+.start-button {
+    background: #E7504D;
+    width: 330px;
+    height: 63px;
+    font-size: 30px;
+    font-weight: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-2 {
+    height: 250px;
+    width: 100%;
+}
+
+.row-2>div {
+    width: calc(100% / 4);
+}
+
+.row-2 img {
+    padding-top: 45px;
+    padding-left: 145px;
+}
+
+.row-2-text {
+    margin-top: 41px;
+    height: 51px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    color: #767777;
+    line-height: 18px;
+    text-align: center;
+}
+
+.text-border {
+    border-right: 2px solid #BBBBBB;
+}
+
+.row-3 {
+    position: relative;
+    height: 360px;
+    background: rgb(237, 237, 237);
+}
+
+.row-3 img {
+    margin-top: 89px;
+    margin-left: 595px;
+}
+
+.row-3 div {
+    margin-top: 39px;
+    font-size: 54px;
+    font-family: "SimHei";
+    text-align: center;
+    color: rgb(161, 161, 161);
+}
+
+.row-4 {
+    background: url("../images/4/map.png") no-repeat;
+    position: relative;
+    width: 100%;
+    height: 340px;
+    z-index: 0;
+}
+
+.red-mask {
+    position: absolute;
+    background: rgba(255, 0, 0, 0.15);
+    height: 340px;
+    width: 100%;
+    z-index: -1;
+}
+
+.row-4-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+    color: white;
+}
+
+.row-4-text :nth-child(n) {
+    margin: 0;
+}
+
+.row-4-text p:nth-child(1) {
+    margin-top: 55px;
+    font-size: 21px;
+}
+
+.row-4-text div:nth-child(2) {
+    margin: auto;
+    margin-top: 11px;
+    width: 30px;
+    border: 1px solid white;
+}
+
+.row-4-text p:nth-child(3) {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 172px;
+    font-family: "Microsoft YaHei";
+}
+
+.dropdown select {
+    border: 0;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url("../images/4/dropdown.png") no-repeat scroll right center transparent;
+    width: 236px;
+    height: 35px;
+    font-size: 12px;
+    padding-left: 12px;
+    color: #a8aaaa;
+}
+
+.select {
+    background: url("../images/4/dropdown.png") no-repeat scroll right center transparent;
+    width: 236px;
+    height: 35px;
+    font-size: 12px;
+    color: #a8aaaa;
+}
+
+.select:hover,
+.select:active,
+.select:focus {
+    outline: rgb(215, 153, 149) solid 2px;
+}
+
+select:hover,
+select:active,
+select:focus {
+    outline: rgb(215, 153, 149) solid 2px;
+}
+
+#select-1 {
+    margin-left: 125px;
+}
+
+#select-2,
+#select-3 {
+    margin-left: 28px;
+}
+
+#select-3 {
+    margin-right: 28px;
+}
+
+.search-btn {
+    background: rgb(190, 78, 72);
+    padding-left: 12px;
+    width: 236px;
+    height: 35px;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-around;
+    letter-spacing: 25px;
+    color: white;
+}
+
+.row-5 {
+    background: rgb(248, 248, 248);
+    position: relative;
+    width: 100%;
+    height: 605px;
+}
+
+img[alt=activities] {
+    position: absolute;
+    top: 101px;
+    left: 148px;
+}
+
+.activities div {
+    position: absolute;
+}
+
+.activities p {
+    margin: 0;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    text-align: center;
+}
+
+.activities p:nth-child(2) {
+    margin-top: 12px;
+    font-size: 12px;
+    color: rgb(159, 159, 159);
+}
+
+.activities>div {
+    top: 452px;
+}
+
+#beijing {
+    left: 225px;
+}
+
+.activities p:nth-child(1) {
+    font-size: 15px;
+}
+
+#shanghai {
+    top: 105px;
+    left: 415px;
+}
+
+#shanghai p:nth-child(1) {
+    font-size: 22px;
+    letter-spacing: 38px;
+}
+
+#shanghai p:nth-child(2) {
+    margin-top: 8px;
+    margin-left: -40px;
+}
+
+#shenzhen {
+    left: 721px;
+}
+
+#hongkong {
+    left: 975px;
+}
+
+.socks {
+    position: relative;
+    background: url("../images/6/socks.png") no-repeat;
+    width: 851px;
+    height: 567px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    color: white;
+}
+
+.socks>div:first-child {
+    margin-top: 126px;
+    height: 48px;
+    font-size: 50px;
+}
+
+.socks>div:nth-child(2) {
+    margin-top: -146px;
+    height: 120px;
+    font-size: 158px;
+}
+
+.socks>div:nth-child(3) {
+    margin-top: -88px;
+    height: 42px;
+    font-size: 22px;
+    line-height: 44px;
+}
+
+.socks span {
+    margin-left: -35px;
+}
+
+.triangle-left {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 30px solid white;
+    border-bottom: 15px solid transparent;
+}
+
+.new-world {
+    margin: 0 auto;
+    font-family: "Microsoft YaHei";
+}
+
+.new-world p {
+    width: 288px;
+    font-size: 12px;
+    font-family: "Simsun";
+    color: #aaaaaa;
+    line-height: 30px;
+}
+
+.new-world div:first-child {
+    font-size: 20px;
+    font-family: "Microsoft YaHei";
+}
+
+#skew {
+    display: inline-block;
+    transform: translateX(2em);
+    -ms-transform: translateX(2em);
+    -webkit-transform: skewx(-35deg);
+    -moz-transform: translateX(2em);
+}
+
+.new-world>div:first-child {
+    text-align: center;
+    margin-top: 165px;
+}
+
+.new-world span:last-child {
+    color: rgb(231, 79, 77);
+}
+
+#more-detail {
+    margin-top: 30px;
+    margin-left: 92px;
+    width: 103px;
+    height: 31px;
+    border: 1px solid rgb(228, 102, 105);
+}
+
+#more-detail p {
+    margin: 0;
+    width: 103px;
+    height: 31px;
+    font-size: 12px;
+    text-align: center;
+    color: rgb(228, 102, 105);
+}
+
+.dot {
+    margin-top: 25px;
+    margin-left: 115px;
+}
+
+.solid-dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: rgb(146, 146, 146);
+}
+
+.hollow-dot {
+    margin-left: 14px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid rgb(146, 146, 146);
+}
+
+.row-7 {
+    font-size: 21px;
+    font-family: "SimHei";
+    text-align: center;
+}
+
+.row-7-box {
+    width: calc(100% / 3);
+    height: 520px;
+}
+
+.red {
+    background: rgb(231, 80, 77);
+    color: white;
+}
+
+.red>p {
+    margin-top: 150px;
+}
+
+.red div:nth-child(2) {
+    margin: auto;
+    margin-top: 14px;
+    width: 30px;
+    border: 1px solid white;
+}
+
+.red>div:last-child {
+    margin: 25px auto;
+    width: 167px;
+    height: 41px;
+    border: 1px solid white;
+}
+
+.red>div:last-child p {
+    margin-top: calc((41px - 21px) / 2);
+    width: 167px;
+    height: 41px;
+}
+
+.white {
+    background: white;
+}
+
+.white>p {
+    margin-top: 150px;
+}
+
+.white div:nth-child(2) {
+    margin: auto;
+    margin-top: 14px;
+    width: 30px;
+    border: 1px solid rgb(171, 171, 171);
+}
+
+.white>div:last-child {
+    margin: 25px auto;
+    width: 167px;
+    height: 41px;
+    border: 1px solid rgb(231, 80, 77);
+}
+
+.white>div:last-child p {
+    margin-top: calc((41px - 21px) / 2);
+    width: 167px;
+    height: 41px;
+    color: rgb(231, 80, 77);
+}
+
+.image {
+    background: url("../images/7/platform.png")no-repeat;
+    position: relative;
+}
+
+.grey-mask {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    height: 520px;
+    width: 100%;
+    z-index: 0;
+}
+
+.triangle-right {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 30px solid white;
+    border-bottom: 15px solid transparent;
+}
+
+.row-8 {
+    position: relative;
+    width: 100%;
+    height: 750px;
+}
+
+.row-8 p {
+    margin: 0;
+}
+
+.row-8-head {
+    position: absolute;
+    top: 120px;
+    margin: 0 calc((100% - 420px) / 2);
+    text-align: center;
+}
+
+.row-8-head p:first-child {
+    font-size: 21px;
+    font-family: "SimHei";
+}
+
+.row-8-head div {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 30px;
+    border: 1px solid rgb(231, 80, 77);
+}
+
+.row-8-head p:last-child {
+    font-size: 12px;
+    font-family: "Microsoft YaHei";
+    color: #aaaaaa;
+}
+
+.row-8>div:last-child {
+    position: absolute;
+    top: calc(120px + 77px + 106px);
+}
+
+.left-box {
+    width: calc(427px - 138px);
+}
+
+.row-8-h2 {
+    margin: 0;
+    font-size: 14px;
+    font-family: "SimHei";
+    color: #231815;
+    opacity: 0.8;
+}
+
+.row-8-p {
+    font-size: 12px;
+    font-family: "Simsun";
+    color: #231815;
+    opacity: 0.6;
+}
+
+.left-box {
+    margin-left: 138px;
+}
+
+.left-box>div>p {
+    margin-top: 28px;
+}
+
+.more {
+    margin-left: 247px;
+    padding-left: 17px;
+    background: url("../images/8/angle.png") no-repeat scroll left center transparent;
+}
+
+.more-1 {
+    margin-top: 6px;
+}
+
+.more-2 {
+    margin-top: 10px;
+}
+
+.rights {
+    margin-top: 35px;
+}
+
+.more-provision {
+    margin-top: 15px;
+}
+
+.right-box>div {
+    position: relative;
+    margin-left: 91px;
+    margin-bottom: 14px;
+}
+
+input:active,
+input:focus,
+textarea:active,
+textarea:focus {
+    outline: rgb(215, 153, 149) solid 2px;
+    ;
+}
+
+.cell-1 {
+    padding-left: 55px;
+    margin-right: 31px;
+    width: calc(311px - 55px);
+    height: 40px;
+    background: rgb(237, 237, 237);
+    border: 0;
+}
+
+.right-box>div label {
+    font-size: 12px;
+    font-family: "Simsun";
+    opacity: 0.6;
+}
+
+.right-box>div:first-child label {
+    margin-right: -53px;
+}
+
+.cell-2 {
+    padding-left: 80px;
+    margin-right: 31px;
+    width: calc(311px - 80px);
+    height: 40px;
+    background: rgb(237, 237, 237);
+    border: 0;
+}
+
+.right-box>div:nth-child(2) label {
+    margin-right: -77px;
+}
+
+.right-box>div:nth-child(3) {
+    position: relative;
+}
+
+.cell-3 {
+    padding-left: 170px;
+    padding-top: 17px;
+    margin-left: -17px;
+    width: calc(637px - 170px);
+    height: calc(118px - 17px);
+    background: rgb(237, 237, 237);
+    border: 0;
+}
+
+.right-box>div:nth-child(3) label {
+    position: absolute;
+    top: 17px;
+}
+
+
+.cell-4 {
+    margin-left: -17px;
+    width: 639px;
+    height: 40px;
+    background: rgb(237, 237, 237);
+    border: 0;
+}
+
+input[type = submit] {
+    font-size: 14px;
+    font-family: "SimHei";
+}
+
+.row-9 {
+    width: 100%;
+    height: 358px;
+    background: rgb(50, 54, 62);
+    text-align: center;
+    color: white;
+}
+
+.row-9 h2 {
+    margin: 0;
+    padding-top: 90px;
+    font-size: 21px;
+    font-family: "SimHei";
+}
+
+.row-9 p {
+    margin: 0;
+    margin-top: 9px;
+    font-size: 12px;
+    font-family: "Simsun";
+    line-height: 18px;
+}
+.row-9 input[type = email] {
+    width: 421px;
+    height: 35px;
+    margin-top: 28px;
+    padding-left: 9px;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+}
+
+.row-9 input[type = submit] {
+    margin-left: -4px;
+    background: rgb(112, 114, 120);
+    border: 0;
+    width: 80px;
+    height: 41px;
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+    color: #fff;
+}
+
+.row-9 img {
+    margin-top: 37px;
+    margin-right: 22px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 57px;
+    background: rgb(47, 47, 56);
+    font-size: 12px;
+    font-family: "Simsun";
+    color: white;
+    text-decoration: none;
+}
+
+footer>div {
+    position: absolute;
+    margin-left: 98px;
+    margin-top: 30px;
+}
+
+footer a {
+    float: right;
+    margin-top: 33px;
+    margin-right: 40px;
+}
+
+footer a:link,
+footer a:visited,
+footer a:active,
+footer a:focus {
+    text-decoration: none;
+    color: white;
+}
