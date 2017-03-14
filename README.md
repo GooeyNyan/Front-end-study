@@ -3,8 +3,12 @@
 
 
 预览：
-小薇学院：
-    任务一：https://boozinyan.com//Front-end/WEI/task1/task1.html
-    任务二：https://boozinyan.com//Front-end/WEI/task2/task2.html
-    任务三：https://boozinyan.com//Front-end/WEI/task3/task3.html
-    任务四：https://boozinyan.com//Front-end/WEI/task4/task4.html
+小薇学院：<br>
+    任务一：https://boozinyan.com/Front-end/WEI/task1/task1.html <br>
+    任务二：https://boozinyan.com/Front-end/WEI/task2/task2.html <br>
+    任务三：https://boozinyan.com/Front-end/WEI/task3/task3.html <br>
+    任务四：https://boozinyan.com/Front-end/WEI/task4/task4.html <br>
+    任务五：https://boozinyan.com/Front-end/WEI/task5/task5.html <br>
+    任务六：https://boozinyan.com/Front-end/WEI/task6/task6.html <br>
+    任务七：https://boozinyan.com/Front-end/WEI/task7/task7.html <br>
+    任务八：https://boozinyan.com/Front-end/WEI/task8/task8.html <br>
