@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>task9</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <!-- 顶栏左侧logo -->
+        <div>
+            <img src="images/header/logo.png" alt="logo">
+        </div>
+
+        <!-- 顶栏右侧search bar & login -->
+        <div>
+            <!-- search bar -->
+            <div class="search">
+                <form>
+                    <img src="images/header/search.png" alt="search">
+                    <input type="search" name="search">
+                </form>
+            </div>
+            <!-- login -->
+            <div class="login">
+                <img src="images/header/login.png" alt="login user"> 登录
+            </div>
+        </div>
+    </header>
+
+    <div class="flex">
+        <!-- aside -->
+        <aside>
+            <div class="user-profile">
+                <!-- 头像，用户名 -->
+                <div>
+                    <div id="portrait-outline">
+                        <div id="portrait"></div>
+                    </div>
+                    <p id="username">ABC123</p>
+                </div>
+
+                <!-- 收藏数、粉丝数 -->
+                <div id="collections-fans">
+                    <div>
+                        <p>110<br><span>收藏</span></p>
+                    </div>
+                    <div>
+                        <p>313<br><span>粉丝</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- menu -->
+            <div id="menu">
+                <!-- 个人报表 -->
+                <div class="open-menu-item">
+                    <div class="item-head">
+                        <div><img src="images/aside/form.png" alt="report forms icon"> <span>个人报表</span></div>
+                        <div class="document">
+                            <img src="images/aside/angle-right.png" alt="angle-right"> <img src="images/aside/folder.png"
+                                alt="folder-icon"> 文件一
+                        </div>
+                        <div class="document" id="document-2">
+                            <img src="images/aside/angle-down.png" alt="angle-right"> <img src="images/aside/folder.png"
+                                alt="folder-icon"> 文件二
+                            <div class="document" id="doc-white"><img src="images/aside/doc-white.png" alt="document"> 文档1</div>
+                            <div class="document"><img src="images/aside/doc.png" alt="document"> 文档2</div>
+                        </div>
+                        <div class="document">
+                            <img src="images/aside/angle-right.png" alt="angle-right"> <img src="images/aside/folder.png"
+                                alt="folder-icon"> 文件三
+                        </div>
+                    </div>
+                </div>
+                <!-- 个人收藏 -->
+                <div class="menu-item"><img src="images/aside/star.png" alt="star">个人收藏</div>
+                <!-- 我的分享 -->
+                <div class="menu-item"><img src="images/aside/share.png" alt="share">我的分享</div>
+                <!-- 图库 -->
+                <div class="menu-item"><img src="images/aside/star.png" alt="star">图库</div>
+                <!-- 成长记录 -->
+                <div class="menu-item"><img src="images/aside/star.png" alt="star">成长记录</div>
+                <!--账户信息 -->
+                <div class="menu-item"><img src="images/aside/profile.png" alt="profile">账户信息</div>
+            </div>
+        </aside>
+
+        <!-- main -->
+        <main>
+            <!-- tabs -->
+            <div class="tabs">
+                <p>C站 / 个人报表 / 文件一 / <span>文档一</span></p>
+            </div>
+
+            <!-- container 890px width -->
+            <div class="container">
+                <div class="row1">
+                    <div class="row1-box1">
+                        <label>查询项</label>
+                        <select><option>第一项</option></select>
+                    </div>
+                    <div class="row1-box2">
+                        <div>
+                            <label>买方</label>
+                            <select><option>小A</option></select>
+                        </div>
+                        <div>
+                            <label>卖方</label>
+                            <select><option>小C</option></select>
+                        </div>
+                        <img src="images/1/1.png" alt="interchange">
+                    </div>
+                    <div class="row1-box3">
+                        <div>
+                            <label>日期</label>
+                            <select><option>2016-04-01</option></select>
+                            <label>总耗时</label>
+                            <select><option>8 天</option></select>
+                        </div>
+                        <div>
+                            <label>人数</label>
+                            <select><option>10 人</option></select>
+                            <label>成交项</label>
+                            <select><option>10 项</option></select>
+                        </div>
+                    </div>
+                    <div class="row1-box4">
+                        搜索
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="row2-left-angle"><img src="images/2/angle-left.png" alt="angle left"></div>
+                    <div class="time-price" id="blue-border">
+                        <div><span class="time">10:00 am</span></div>
+                        <div><span class="currency">¥</span><span class="money">1200</span></div>
+                    </div>
+                    <div class="time-price">
+                        <div><span class="time">11:00 am</span></div>
+                        <div><span class="currency">¥</span><span class="money">1300</span></div>
+                    </div>
+                    <div class="time-price">
+                        <div><span class="time">12:00 am</span></div>
+                        <div><span class="currency">¥</span><span class="money">1200</span></div>
+                    </div>
+                    <div class="time-price">
+                        <div><span class="time">01:00 pm</span></div>
+                        <div><span class="currency">¥</span><span class="money">1400</span></div>
+                    </div>
+                    <div class="time-price">
+                        <div><span class="time">02:00 pm</span></div>
+                        <div><span class="currency">¥</span><span class="money">1500</span></div>
+                    </div>
+                    <div class="time-price">
+                        <div><span class="time">03:00 pm</span></div>
+                        <div><span class="currency">¥</span><span class="money">1800</span></div>
+                    </div>
+                    <div class="row2-right-angle"><img src="images/2/angle-right.png" alt="angle right"></div>
+                    <div class="query" id="query">
+                        <img src="images/2/calendar.png" alt="calendar">历史查询
+                    </div>
+                </div>
+                <div class="row3">
+                    <div><span class="sum-title">2016年4月份统计</span></div>
+                    <div class="flex">
+                        <div class="sum-cell" id="green">
+                            <div class="volume"><span>133311</span><br><span>成交量</span></div>
+                            <div class="lump"></div>
+                        </div>
+                        <div class="sum-cell" id="blue">
+                            <div class="volume"><span>133311</span><br><span>成交量</span></div>
+                            <div class="lump"></div>
+                        </div>
+                        <div class="sum-cell" id="red">
+                            <div class="volume"><span>133311</span><br><span>成交量</span></div>
+                            <div class="lump"></div>
+                        </div>
+                        <div class="sum-cell" id="yellow">
+                            <div class="volume"><span>133311</span><br><span>成交量</span></div>
+                            <div class="lump"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row4">
+                    <!-- 左侧div -->
+                    <div></div>
+                    <!-- 右侧div -->
+                    <div></div>
+                </div>
+                <div class="row5">
+                    <!-- 左侧div -->
+                    <div></div>
+                    <!-- 右侧div -->
+                    <div></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,450 @@
+.flex {
+    display: flex;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 56px;
+    background: rgb(34, 138, 192);
+}
+
+img[alt="logo"] {
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+header>div:first-child {
+    float: left;
+}
+
+header>div:last-child {
+    float: right;
+}
+
+.search {
+    margin-top: 14px;
+    float: left;
+    width: 312px;
+    height: 28px;
+    border-radius: 14px;
+    background: white;
+}
+
+.search img {
+    margin-left: 17px;
+    margin-top: 4px;
+}
+
+.search input {
+    border: 0;
+    width: 250px;
+    outline: 0;
+}
+
+.login {
+    margin-left: 21px;
+    margin-right: 94px;
+    margin-top: 20px;
+    float: right;
+    font-size: 12px;
+    font-family: "Adobeheitistd";
+    color: white;
+}
+
+.login img {
+    vertical-align: sub;
+}
+
+aside {
+    position: absolute;
+    width: 260px;
+    height: 100%;
+    background: rgb(42, 46, 61);
+}
+
+div[id *="portrait"] {
+    border-radius: 50%;
+}
+
+#portrait-outline {
+    float: left;
+    margin-top: 18px;
+    margin-left: 45px;
+    box-sizing: border-box;
+    width: 56px;
+    height: 56px;
+    border: 1px solid rgb(241, 241, 241);
+}
+
+#portrait {
+    margin: 4px auto;
+    width: 46px;
+    height: 46px;
+    background: rgb(186, 186, 190);
+}
+
+#username {
+    margin-top: 40px;
+    margin-right: 92px;
+    float: right;
+    font-size: 16px;
+    font-family: "SimHei";
+    color: white;
+}
+
+#collections-fans p {
+    margin: 0;
+    font-size: 16px;
+    font-family: "SimHei";
+    color: #6e8095;
+    line-height: 14px;
+}
+
+#collections-fans span {
+    font-size: 12px;
+    font-family: "Simsun";
+    color: #6e8095;
+}
+
+#collections-fans div:first-child {
+    margin-top: 22px;
+    margin-bottom: 24px;
+    float: left;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    border-right: 2px solid rgb(50, 54, 71);
+}
+
+#collections-fans div:first-child p {
+    margin-right: -16px;
+}
+
+#collections-fans div:last-child {
+    margin-top: 22px;
+    padding-right: 50px;
+    float: right;
+    width: calc(100% - 120px - 50px);
+    text-align: center;
+}
+
+.user-profile {
+    height: 150px;
+}
+
+.open-menu-item {
+    height: 190px;
+    background: rgb(56, 61, 78);
+}
+
+.item-head {
+    padding-top: 14px;
+    padding-left: 46px;
+    font-size: 12px;
+    font-family: "SimHei";
+    color: white;
+}
+
+.document {
+    margin-left: 25px;
+    margin-top: 15px;
+    color: #6e8095;
+}
+
+#document-2 {
+    margin-left: 22px;
+    color: white;
+}
+
+img[alt *="document"] {
+    margin-left: 10px;
+    width: 6%;
+}
+
+#doc-white {
+    color: white;
+}
+
+.menu-item {
+    margin: 17px auto;
+    font: 12px "SimHei";
+    color: #6e8095;
+}
+
+.menu-item:nth-child(n + 3) {
+    margin-top: 34px;
+}
+
+.menu-item img {
+    margin-left: 46px;
+    margin-right: 12px;
+}
+
+main {
+    position: absolute;
+    margin-left: 260px;
+    width: calc(100% - 260px);
+    height: 100%;
+    background: rgb(237, 237, 237);
+}
+
+.tabs {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    width: 100%;
+    height: 30px;
+    background: white;
+    font: 12px "SimHei";
+    color: rgb(176, 176, 176);
+}
+
+.tabs p {
+    margin: 0;
+}
+
+.tabs span {
+    color: rgb(104, 152, 194);
+}
+
+.container {
+    margin: 50px auto;
+    width: 890px;
+    height: 100%;
+}
+
+.container>div[class *="row"] {
+    width: 100%;
+}
+
+.row1 {
+    display: flex;
+    padding-left: 30px;
+    padding-top: 15px;
+    height: 84px;
+    background: #fff;
+    box-sizing: border-box;
+    border: 1px solid rgb(220, 221, 223);
+    font: 12px "SimHei";
+    color: #aaaaaa;
+}
+
+.row1 select {
+    margin-left: 5px;
+    padding-left: 10px;
+    height: 25px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    box-sizing: border-box;
+    border: 1px solid rgb(203, 203, 203);
+    font: 12px "SimHei";
+}
+
+.row1-box1 select {
+    width: 70px;
+    background: url("../images/1/blue-angle.png") no-repeat scroll transparent;
+    background-position: 90% 50%;
+}
+
+.row1-box2 {
+    position: relative;
+    margin-left: 38px;
+    width: 183px;
+}
+
+.row1-box2 select {
+    width: 120px;
+    background: url("../images/1/angle.png") no-repeat scroll transparent;
+    background-position: 93% 50%;
+}
+
+[class *="row1-box"]>div:nth-child(2) {
+    margin-top: 5px;
+}
+
+.row1-box2 img {
+    position: absolute;
+    top: 15%;
+    right: 0;
+}
+
+.row1-box3 {
+    margin-left: 33px;
+}
+
+.row1-box3>div:first-child>select:nth-child(2) {
+    width: 120px;
+}
+
+.row1-box3>div:first-child>select:nth-child(4) {
+    width: 70px;
+    background: url("../images/1/angle.png") no-repeat scroll transparent;
+    background-position: 90% 50%;
+}
+
+.row1-box3>div:last-child>select:nth-child(2) {
+    width: 70px;
+    background: url("../images/1/angle.png") no-repeat scroll transparent;
+    background-position: 90% 50%;
+}
+
+.row1-box3>div:last-child>select:nth-child(4) {
+    width: 120px;
+    background: url("../images/1/angle.png") no-repeat scroll transparent;
+    background-position: 95% 50%;
+}
+
+.row1-box4 {
+    display: flex;
+    margin-left: 30px;
+    margin-top: 17px;
+    width: 50px;
+    height: 25px;
+    background: rgb(56, 138, 193);
+    border-radius: 5%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.row2 {
+    display: flex;
+    margin-top: 10px;
+    height: 65px;
+    font: 12px "Microsoft YaHei";
+}
+
+.row2>div {
+    margin-right: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: 1px solid rgb(202, 205, 208);
+    background: white;
+}
+
+.row2-left-angle,
+.row2-right-angle {
+    width: 30px;
+}
+
+.time-price {
+    width: 111px;
+    background: white;
+}
+
+#query {
+    margin-right: 0px;
+    width: 131px;
+}
+
+#blue-border {
+    border-top: 4px solid rgb(67, 136, 200);
+}
+
+.time-price>div {
+    text-align: center;
+}
+
+.time-price>div:first-child {
+    margin-top: 3px;
+    width: 100%;
+}
+
+.time-price>div:last-child {
+    margin-top: -6px;
+}
+
+.currency {
+    font-size: 15px;
+    color: rgb(170, 170, 170);
+}
+
+.money {
+    font-size: 21px;
+    color: #ec6500;
+}
+
+.query img {
+    margin-right: 11px;
+}
+
+.row3 {
+    margin-top: 18px;
+    font: 12px "SimHei";
+}
+
+.row3 .flex {
+    justify-content: center;
+}
+
+.sum-title {
+    font: 12px "Microsoft YaHei";
+}
+
+.sum-cell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+    width: 198px;
+    height: 70px;
+    box-shadow: 0 0 4px rgb(170, 170, 170);
+    background: white;
+}
+
+.sum-cell:nth-child(n + 2) {
+    margin-left: 30px;
+}
+
+#green {
+    border-left: 4px solid rgb(68, 178, 158);
+}
+
+#blue {
+    border-left: 4px solid rgb(56, 138, 193);
+}
+
+#red {
+    border-left: 4px solid rgb(207, 74, 54);
+}
+
+#yellow {
+    border-left: 4px solid rgb(226, 205, 71);
+}
+
+.volume {
+    margin-left: 8px;
+    line-height: 25px;
+}
+
+.volume span:last-child {
+    color: rgb(183, 183, 183);
+}
+
+.lump {
+    margin-right: 15px;
+    width: 60px;
+    height: 46px;
+}
+
+#green .lump {
+    background: rgb(68, 178, 158);
+}
+
+#blue .lump {
+    background: rgb(56, 138, 193);
+}
+
+#red .lump {
+    background: rgb(207, 74, 54);
+}
+
+#yellow .lump {
+    background: rgb(226, 205, 71);
+}
