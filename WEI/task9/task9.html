@@ -5,7 +5,7 @@
     <title>task9</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
 </head>
 
@@ -187,17 +187,279 @@
                         </div>
                     </div>
                 </div>
-                <div class="row4">
+                <div class="row4 flex">
                     <!-- 左侧div -->
-                    <div></div>
+                    <div>
+                        <div class="title">第一组项目</div>
+                        <div class="flex-center">
+                            <div class="project">
+                                <div class="project-tabs flex">
+                                    <div class="project-tab active flex-center">项目一</div>
+                                    <div class="project-tab flex-center">项目一</div>
+                                    <div class="project-tab flex-center">项目一</div>
+                                    <div class="project-tab flex-center">项目一</div>
+                                    <div class="project-tab flex-center">项目一</div>
+                                </div>
+                                <div class="project-detail flex-center" id="shopping-list">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td class="active">购买材料一</td>
+                                                <td>购买材料二</td>
+                                                <td>购买材料三</td>
+                                                <td>购买材料四</td>
+                                            </tr>
+                                            <tr>
+                                                <td>购买材料五</td>
+                                                <td>购买材料六</td>
+                                                <td>购买材料七</td>
+                                                <td>购买材料八</td>
+                                            </tr>
+                                            <tr>
+                                                <td>购买材料九</td>
+                                                <td>购买材料十</td>
+                                                <td>购买材料十一</td>
+                                                <td>购买材料十二</td>
+                                            </tr>
+                                            <tr>
+                                                <td>购买材料十三</td>
+                                                <td>购买材料十四</td>
+                                                <td>购买材料十五</td>
+                                                <td>购买材料十六</td>
+                                            </tr>
+                                            <tr>
+                                                <td>购买材料十七</td>
+                                                <td>购买材料十八</td>
+                                                <td>购买材料十九</td>
+                                                <td>购买材料二十</td>
+                                            </tr>
+                                            <tr>
+                                                <td>购买材料二一</td>
+                                                <td>购买材料二二</td>
+                                                <td>购买材料二三</td>
+                                                <td>购买材料二四</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- 右侧div -->
-                    <div></div>
+                    <div>
+                        <div class="title">第一组项目</div>
+                        <div class="project-info">
+                            <div>
+                                <h2>标题</h2>
+                                <p>项目报表三</p>
+                            </div>
+                            <div class="flex">
+                                <div>
+                                    <h2>价格</h2>
+                                    <p>¥ 158</p>
+                                </div>
+                                <div>
+                                    <h2>负责人</h2>
+                                    <p>小A</p>
+                                </div>
+                            </div>
+                            <div>
+                                <h2>详细描述</h2>
+                                <p>该项目目前负责人是……</p>
+                            </div>
+                            <div class="flex">
+                                <div><input type="checkbox" id="observe"><label for="observe">遵守保密协议</label></div>
+                                <div class="flex-center">搜索</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row5">
+                <div class="row5 flex">
                     <!-- 左侧div -->
-                    <div></div>
+                    <div class="row5-box1">
+                        <div class="title">日历</div>
+                        <div class="calendar">
+                            <div>
+                                <select><option>2016年</option></select>
+                                <select><option>4月</option></select>
+                                <select><option>标注日期</option></select>
+                                <button>返回今天</button>
+                            </div>
+                            <div class="week flex">
+                                <span>一</span>
+                                <span>二</span>
+                                <span>三</span>
+                                <span>四</span>
+                                <span>五</span>
+                                <span>六</span>
+                                <span>日</span>
+                            </div>
+                            <div class="flex-center">
+                                <div class="calendar-row flex">
+                                    <div class="calendar-cell"></div>
+                                    <div class="calendar-cell"></div>
+                                    <div class="calendar-cell"></div>
+                                    <div class="calendar-cell"></div>
+                                    <div class="calendar-cell">1<br><span class="text-red">愚人</span></div>
+                                    <div class="calendar-cell weekend">2<br>廿五</div>
+                                    <div class="calendar-cell weekend">3<br>廿六</div>
+                                </div>
+                                <div class="calendar-row flex">
+                                    <div class="calendar-cell">4<br>廿七</div>
+                                    <div class="calendar-cell">5<br><span class="text-red">清明</span></div>
+                                    <div class="calendar-cell">6<br>廿九</div>
+                                    <div class="calendar-cell">7<br>三月</div>
+                                    <div class="calendar-cell">8<br>初二</div>
+                                    <div class="calendar-cell weekend yellow-border">9<br>初三</div>
+                                    <div class="calendar-cell weekend">10<br>初四</div>
+                                </div>
+                                <div class="calendar-row flex">
+                                    <div class="calendar-cell">11<br>初五</div>
+                                    <div class="calendar-cell yellow-border">12<br>初六</div>
+                                    <div class="calendar-cell">13<br>初七</div>
+                                    <div class="calendar-cell">14<br>初八</div>
+                                    <div class="calendar-cell">15<br>初九</div>
+                                    <div class="calendar-cell weekend">16<br>初十</div>
+                                    <div class="calendar-cell weekend">17<br>十一</div>
+                                </div>
+                                <div class="calendar-row flex">
+                                    <div class="calendar-cell">18<br>十二</div>
+                                    <div class="calendar-cell yellow-border">19<br>十三</div>
+                                    <div class="calendar-cell">20<br>十四</div>
+                                    <div class="calendar-cell">21<br>十五</div>
+                                    <div class="calendar-cell">22<br>十六</div>
+                                    <div class="calendar-cell weekend">23<br>十七</div>
+                                    <div class="calendar-cell weekend">24<br>十八</div>
+                                </div>
+                                <div class="calendar-row flex">
+                                    <div class="calendar-cell">25<br>十九</div>
+                                    <div class="calendar-cell">26<br>廿十</div>
+                                    <div class="calendar-cell">27<br>廿一</div>
+                                    <div class="calendar-cell">28<br>廿二</div>
+                                    <div class="calendar-cell">29<br>廿三</div>
+                                    <div class="calendar-cell weekend">30<br>廿四</div>
+                                    <div class="calendar-cell"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <!-- 右侧div -->
-                    <div></div>
+                    <div>
+                        <div class="title">汽车行业品牌榜</div>
+                        <div class="flex-center" id="car">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>排名</th>
+                                        <th>品牌</th>
+                                        <th>搜索指数</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>大众</td>
+                                        <td>
+                                            <span class="left">48912001</span>
+                                            <div class="right">
+                                                <div class="red"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>丰田</td>
+                                        <td>
+                                            <span class="left">29307333</span>
+                                            <div class="right">
+                                                <div class="orange"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>奥迪</td>
+                                        <td>
+                                            <span class="left">23139070</span>
+                                            <div class="right">
+                                                <div class="yellow"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>本田</td>
+                                        <td>
+                                            <span class="left">22885564</span>
+                                            <div class="right">
+                                                <div class="blue1"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>福特</td>
+                                        <td>
+                                            <span class="left">22324792</span>
+                                            <div class="right">
+                                                <div class="blue2"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>宝马</td>
+                                        <td>
+                                            <span class="left">21444077</span>
+                                            <div class="right">
+                                                <div class="blue3"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>现代</td>
+                                        <td>
+                                            <span class="left">20114969</span>
+                                            <div class="right">
+                                                <div class="blue4"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>起亚</td>
+                                        <td>
+                                            <span class="left">19251680</span>
+                                            <div class="right">
+                                                <div class="blue5"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>奔驰</td>
+                                        <td>
+                                            <span class="left">19172837</span>
+                                            <div class="right">
+                                                <div class="blue6"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>别克</td>
+                                        <td>
+                                            <span class="left">18544027</span>
+                                            <div class="right">
+                                                <div class="blue7"></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
