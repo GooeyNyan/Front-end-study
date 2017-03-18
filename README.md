@@ -12,3 +12,4 @@
     任务六：https://boozinyan.com/Front-end/WEI/task6/task6.html <br>
     任务七：https://boozinyan.com/Front-end/WEI/task7/task7.html <br>
     任务八：https://boozinyan.com/Front-end/WEI/task8/task8.html <br>
+    任务九：https://boozinyan.com/Front-end/WEI/task9/task9.html <br>
