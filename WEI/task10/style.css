@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-item {
+    padding: 20px;
+}
+
+[class *= "box"] {
+    width: 150px;
+    border: 1px solid #f00;
+}
+
+.box1 {
+    height: 120px;
+}
+
+.box2 {
+    height: 100px;
+}
+
+.box3 {
+    height: 40px;
+}
+
+.box4 {
+    height: 200px;
+    border: 1px solid #00f;
+}
+
+@media screen and (max-width: 639px) {
+    .flex-container {
+        align-items: flex-start;
+    }
+    
+    .flex-item:last-child {
+        order: -1;
+    }
+}
