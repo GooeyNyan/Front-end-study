@@ -15,6 +15,7 @@
     任务九：https://boozinyan.com/Front-end/WEI/task9/task9.html <br>
     任务十：https://boozinyan.com/Front-end/WEI/task10/task10.html <br>
     任务十一: https://boozinyan.com/Front-end/WEI/task11/index.html <br>
+    任务十二: https://boozinyan.com/Front-end/WEI/task12/index.html <br>
 
 <br><br>
 斌斌学院：<br>
