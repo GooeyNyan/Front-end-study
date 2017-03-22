@@ -139,7 +139,7 @@ div[id *="portrait"] {
     height: 150px;
 }
 
-.open-menu-item {
+.opened-menu-item {
     height: 190px;
     background: rgb(56, 61, 78);
 }
