@@ -1,0 +1,43 @@
+button {
+    margin-left: 1%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    width: 64px;
+    height: 38px;
+
+    border: 1px solid cornflowerblue;
+    box-shadow: 1px 1px 3px grey;
+    border-radius: 10%;
+    background: white;
+}
+
+.pos-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+#myInput {
+    width: 250px;
+    height: 30px;
+}
+
+#leftOut, #orderButton {
+    margin-left: 5%;
+}
+
+#number-list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#number-list li {
+    display: flex;
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    background: cornflowerblue;
+    justify-content: center;
+    align-items: center;
+}
