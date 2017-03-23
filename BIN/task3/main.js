@@ -28,7 +28,6 @@ function getData() {
  * 返回一个排序后的数组
  */
 function sortAqiData(data) {
-
     // 降序排序
     // js sort参考：↓
     // https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
