@@ -14,7 +14,16 @@ button {
 
 .pos-bottom {
     position: absolute;
+    width: 100%;
     bottom: 0;
+}
+
+.active {
+    background: mediumvioletred;
+}
+
+.finished {
+    background: lightseagreen;
 }
 
 #myInput {
@@ -29,15 +38,13 @@ button {
 #number-list {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 0 2%;
 }
 
-#number-list li {
-    display: flex;
-    margin: 10px;
-    padding: 20px;
-    color: white;
+li {
+    display: inline-block;
+    margin: 5px;
+    width: 50px;
     background: cornflowerblue;
-    justify-content: center;
-    align-items: center;
 }

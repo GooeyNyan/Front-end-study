@@ -13,16 +13,17 @@ function leftIn() {
     // get input value from #myInput, If the input value is not a valid number...
     var inputValue = myInput.value;
     if (!isNumeric(inputValue)) {
+        alert("Please enter an integer between 10 and 100");
         myInput.value = null;
         myInput.focus();
         return;
     }
     if (inputValue > 100 || inputValue < 10) {
+        alert("Please enter an integer between 10 and 100");
         myInput.value = null;
         myInput.focus();
         return;
     } else {
-        li.textContent = inputValue;
         li.style.height = inputValue * 3 + "px";
     }
 
@@ -57,16 +58,17 @@ function rightIn() {
 
     var inputValue = myInput.value;
     if (!isNumeric(inputValue)) {
+        alert("Please enter an integer between 10 and 100");
         myInput.value = null;
         myInput.focus();
         return;
     }
     if (inputValue > 100 || inputValue < 10) {
+        alert("Please enter an integer between 10 and 100");
         myInput.value = null;
         myInput.focus();
         return;
     } else {
-        li.textContent = inputValue;
         li.style.height = inputValue * 3 + "px";
     }
 
@@ -81,36 +83,56 @@ function rightIn() {
 
 function leftOut() {
     // store the textContent of the element
-    var str = ul.firstElementChild.textContent;
+    let str = ul.firstElementChild.style.height;
     // remove the node
     ul.removeChild(ul.firstElementChild);
     // alert the textContent
-    alert("The element's value: " + str);
+    alert("The element's height: " + str);
     myInput.focus();
 }
 
 function rightOut() {
-    var str = ul.lastElementChild.textContent;
+    let str = ul.lastElementChild.style.height;
     ul.removeChild(ul.lastElementChild);
-    alert("The element's value: " + str);
+    alert("The element's height: " + str);
     myInput.focus();
 }
 
 function orderList() {
     let list = ul.getElementsByTagName('li');
-    let temp;
-
-    for (let i = 0; i < list.length; i++) {
-        for (let j = 0; j < list.length - i - 1; j++) {
-            if (list[j].textContent > list[j + 1].textContent) {
-                temp = list[j].style.height;
-                list[j].style.height = list[j + 1].style.height;
-                list[j + 1].style.height = temp;
-                temp = list[j].textContent;
-                list[j].textContent = list[j + 1].textContent;
-                list[j + 1].textContent = temp;
+    let stop = 0;
+    let delay = 1800 / list.length;
+    let i = 0, j = 0;
+    let intervalID = setInterval(function () {
+        if (i < list.length) {
+            if (j < list.length - i - 1) {
+                    list[j].className = "";
+                    list[j + 1].className = "active";
+                if (list[j].offsetHeight > list[j + 1].offsetHeight) {
+                    let temp = list[j].style.height;
+                    list[j].style.height = list[j + 1].style.height;
+                    list[j + 1].style.height = temp;
+                }
+                j++;
+            } else {
+                i++;
+                list[list.length - i].className = "finished";
+                j = 0;
             }
         }
+    }, delay);
+}
+
+function createList() {
+    ul.innerHTML = '';
+    for (let i = 0; i < 60; i++) {
+        let li = document.createElement('li');
+        li.style.height = Math.floor(Math.random() * 100 * 3 + 1 + 10) + "px";
+        li.addEventListener('click', function () {
+            this.remove();
+            myInput.focus();
+        });
+        ul.appendChild(li);
     }
 }
 
@@ -128,7 +150,9 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+function resetList() {
 
+}
 
 
 // select the element what we need
@@ -138,6 +162,8 @@ var rightInButton = document.querySelector('#rightIn');
 var leftOutButton = document.querySelector('#leftOut');
 var rightOutButton = document.querySelector('#rightOut');
 var orderButton = document.querySelector('#orderButton');
+var resetButton = document.querySelector('#resetButton');
+var createButton = document.querySelector('#createButton');
 var ul = document.querySelector('#number-list');
 
 // add click event
@@ -146,5 +172,7 @@ rightInButton.addEventListener('click', rightIn);
 leftOutButton.addEventListener('click', leftOut);
 rightOutButton.addEventListener('click', rightOut);
 orderButton.addEventListener('click', orderList);
+resetButton.addEventListener('click', resetList);
+createButton.addEventListener('click', createList);
 
 myInput.focus();
